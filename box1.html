@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background-color: gainsboro;
+  }
+.flex-container {
+  display: flex;
+  border-radius: 25px;
+}
+
+.flex-container > div {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border-radius: 25px;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+.div1{
+    background-color:white;
+    height:600px;
+    width:300px;
+   
+}
+.div2{
+    background-color:white;
+    height:600px;
+    width:300px;
+    box-shadow: inset;
+}
+.div3{
+    background-color: white;
+    height:600px;
+    width:300px;
+    box-sizing: content-box;
+}
+.child1{
+  background-color: rgb(7, 175, 133);
+  bottom: 80px;
+  height:90px;
+  position:relative;
+  bottom: 50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.child2{
+  background-color: rgb(0, 110, 255);
+  bottom: 80px;
+  height:90px;
+  position:relative;
+  bottom: 50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.child3{
+  background-color: orangered;
+  bottom: 80px;
+  height:90px;
+  position:relative;
+  bottom: 50px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.triangle-down1{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid rgb(7, 175, 133);
+    position: fixed;
+    position:absolute;
+    left:150px;
+    bottom: 455px;
+}
+.triangle-down2{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid rgb(0, 110, 255);
+    position:absolute;
+    left:470px;
+    bottom: 455px;
+}
+.triangle-down3{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid orangered;
+    position:absolute;
+    left:800px;
+    bottom: 455px;
+}
+.line1{
+ width: 112px;
+ height: 47px;
+ border-bottom: 2px solid gray;
+ position: absolute;
+ left:130px;
+ bottom: 400px;
+}
+.line2{
+ width: 112px;
+ height: 47px;
+ border-bottom: 2px solid gray;
+ position: absolute;
+ left:450px;
+ bottom: 400px;
+}
+.line3{
+ width: 112px;
+ height: 47px;
+ border-bottom: 2px solid gray;
+ position: absolute;
+ left:790px;
+ bottom: 400px;
+}
+.line4{
+ width: 112px;
+ height: 47px;
+ border-bottom: 2px solid gray;
+ position: absolute;
+ left:125px;
+ top: 550px;
+}
+.line5{
+ width: 112px;
+ height: 47px;
+ border-bottom: 2px solid gray;
+ position: absolute;
+ left:450px;
+ top: 550px;
+}
+.line6{
+ width: 112px;
+ height: 45px;
+ margin-bottom: 60px;
+ border-bottom: 2px solid gray;
+ position: absolute;
+ left:790px;
+ top: 550px;
+}
+.check{
+  height: 25px;
+  width:10px;
+  border-bottom: 8px solid green;
+  border-right: 8px solid green;
+  transform: rotate(45deg);
+  margin-left: 40px;
+  margin-top: 50px;
+}
+aside{
+  color: black;
+  align-content: center;
+  position: relative;
+  bottom: 50px;
+  margin-top: 10px;
+  margin-right: 80px;
+  float: right;
+  align-items: center;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.wrong{
+  color:red;
+  font-size: 25px;
+}
+p{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 50px;
+  position: relative;
+  bottom: 50px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="div1"> 
+    <div class="child1"> <h5>Basic</h5></div>
+    <div class="triangle-down1"></div>
+    <div class="line1"></div>
+    <div class="check"></div>
+    
+    <aside>Sample Text Here</aside>
+    <aside > &#10060;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Other Text Title</aside>
+    <aside >&#10060;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text Space Goes Here</aside>
+    <aside>&#10060;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description Space</aside>
+    <div class="line4"></div>
+    <p style="color: rgb(7, 175, 133);">$2.99</p>
+  </div>
+  <div class="div2"> 
+    <div class="child2"> <h5>Standard</h5></div>
+    <div class="triangle-down2"></div>
+    <div class="line2"></div>
+    <div class="check"></div>
+    <aside>Sample Text Here</aside>
+    <div class="check"></div>
+    <aside>Other Text Title</aside>
+    <div class="check"></div><aside>Text Space Goes Here</aside>
+    <aside>&#10060;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description Space</aside>
+    <div class="line5"></div>
+    <p style="color: rgb(0, 110, 255);">$5.99</p>
+  </div>
+  <div class="div3">
+    <div class="child3"> <h5 >Premium</h5></div>
+    <div class="triangle-down3"></div>
+    <div class="line3"></div>
+    <div class="check"></div>
+    <aside>Sample Text Here</aside>
+    <div class="check"></div><aside>Other Text Title</aside>
+    <div class="check"></div><aside style="margin-left: 60px;font-size: 16px;">Text Space Goes Here</aside>
+    <div class="check"></div><aside style="margin-left: 20px;">Description Space</aside>
+    <div class="line6"></div>
+    <p style="color: orangered;">$8.99</p>
+  </div> 
+</div>
+</body>
+</html>

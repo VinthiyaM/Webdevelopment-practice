@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice2</title>
+    <style>
+        *{
+            margin:0;
+        }
+       .parent{
+        display: flex;
+        padding: 15px 3px;
+        background-image: linear-gradient(90deg,  pink, rgb(19, 152, 175));
+        max-width: 100wh;
+       }
+       .child1{
+        float:right;
+        width:40%;
+       }
+       .child2 ul{
+        float: left;
+        display: flex;
+       }
+       .child2 ul li{
+        margin-left:  80px;
+        list-style: none;
+       }
+       .child2 ul li a{
+        text-decoration: none;
+        color: black;
+       }
+       .child2 ul li hr{
+       display:none;
+       border:none;
+       background-color: rgba(255,255,255,0);
+       }
+       .child2 ul li:hover hr{
+        display:block;
+        background-color: white;
+        margin-top:5px;
+        border:2px;
+       }
+       .support{
+        height:40px;
+        width: 110px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: white;
+       margin-left: 80px;
+       font-size: 15px;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+       }
+       .support:hover{
+        cursor: pointer;
+        background-color: blue;
+       }
+    </style>
+</head>
+<body>
+    <div class="parent"> 
+        <div class="child1">
+            <p>Image_Logo</p>
+        </div>
+
+       <div class="child2">
+         <ul>
+            <li>
+                
+                <a href="#Home">Home</a>
+                <hr size="4">
+            </li>
+        
+            <li>
+                 <a href="contact">About</a>
+                 <hr size="4" >
+                </li>
+    
+         
+                <li>
+                     <a href="contact">Contact</a>
+                     <hr size="4">
+                    </li>
+        
+            <li>
+                 <a href="services">Services</a>
+                 <hr size="4">
+                </li>
+            <li>
+                <button class="support">📲Support</button>      
+        </li>
+    </ul>  
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .menu{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 120px;
+            background-color: aquamarine;
+        }
+
+        .navbar-nav{
+            background-color: aquamarine;
+            width: 2700px;
+            height:300px;
+            float: left;
+        }
+        nav-item a{
+         align-content: center;
+         float: left;
+         margin-left: 20px;
+        }
+        *{
+            margin:0;
+        }
+       .parent{
+        display: flex;
+        padding: 15px 3px;
+        background-color: aquamarine;
+        max-width: 100wh;
+        height: 1px;
+       }
+       .child1{
+        float:right;
+        width:40%;
+       }
+       .child2 ul{
+        float: left;
+        display: flex;
+       }
+       .child2 ul li{
+        margin-left:  80px;
+        list-style: none;
+       }
+       .child2 ul li a{
+        text-decoration: none;
+        color: black;
+       }
+       .child2 ul li hr{
+       display:none;
+       border:none;
+       background-color: rgba(255,255,255,0);
+       }
+       .child2 ul li:hover hr{
+        display:block;
+        background-color: white;
+        margin-top:5px;
+        border:2px;
+       }
+       .btn btn-primary{
+        margin-bottom: 10px;
+       }
+       @media only screen and (max-width: 768px) {
+       [class*="menu"] {
+       width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="parent"> 
+        <div class="child1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSObhWW7gEGNs1r3kbEXIeWuIDC74C6p5RVQ&s" alt="aws logo" height="50px" width="50px">
+        </div>
+
+       <div class="child2">
+         <ul>
+            <li>
+                
+                <a href="#Home">Home</a>
+                <hr size="4">
+            </li>
+        
+            <li>
+                 <a href="contact">About</a>
+                 <hr size="4" >
+                </li>
+    
+         
+                <li>
+                     <a href="contact">Contact</a>
+                     <hr size="4">
+                    </li>
+        
+            <li>
+                 <a href="services">Services</a>
+                 <hr size="4">
+                </li>
+    </ul>  
+  </div>
+</div>
+    <div class="menu ">
+       <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="lambda" height="100px" width="10px">
+        <div class="card-body">
+          <h5 class="card-title">AWS lambda</h5>
+          <p class="card-text">AWS Lambda is an event-driven, serverless Function as a Service provided by Amazon as a part of Amazon Web Services. It is designed to enable developers to run code without provisioning or managing servers.</p>
+          <a href="https://aws.amazon.com/lambda/" class="btn btn-primary">Go documentation</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,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" class="card-img-top" alt="s3" height="100px" width="10px">
+        <div class="card-body">
+          <h5 class="card-title">AWS S3</h5>
+          <p class="card-text">Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance.Amazon S3 is an object storage service that stores data as objects within buckets.</p>
+          <a href="https://aws.amazon.com/s3/" class="btn btn-primary">Go documentaion</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMsAAADLCAMAAAD3JZcBAAAADFBMVEX////1hTWdTyTKai3Xk7txAAACQElEQVR4nO3cy27rMAxFUZf+/38uEid+JbHlRCKpg71Ht5NeLtCygQ40DEREREREREREREREVDuz8e8veogqmd0tAhqz2dK5xmxj6Vhj9mLpVWNvLV1q7JOlQ82BpTvNoaUzzYmlK82pJbnGbBmwwJJYc5t6mbDIklQzTb1MWGhJqHlOvYxYbMmmsVfLWG5JpbFfLYk0FSxpNFUsSTSVLIGa++R1LUGa1eQ1LQGa7YxjTYu3Zjd5ZYuvprXFU7ObsYHFT9N+L80106yDz16aalaz+uylmWYzq5+liWY967ibsWeL4l4ULIp74bzksiieF4VnTHEvShaesVwWpWeMbyUWzn65RWkvfF9yWpT2onRe+FZi4RkrtyjuRcGi9H1hLzktintRsCjuhfOSy8Jeclp4j+W0cF5yWthLTovSe0zJwt8usPCMlVsU96Jg4buf08JeclrYS04L35ecFs5LTgt7yWlRfI8pPGOKe1Gw8B7LaeG85LQo7YWzn9PCM5bToviMsZdcFqWzr7gXzksuC+clj+Xd/TAO56WJZNI8frvXXppJNigPi4fEx+Ij8bgbykuidS/c0NTiKnlqHjN2fo/ipHn+zxUtIZJ11SzRkIH7YHNKtO5PVrrXWuq+8WH/9ez5Hvhbs2X+qcASPPPnbpbl3wWWyGEvVGCJHrG4U0v0gBc6sUSPd6lDS/RwFzuwRI92vU+W6Lm+6q0leqive7FED/RTG0v0MD83W6IHqdLdEj0EEREREREREREREZFg/0zNSNm7ODzEAAAAAElFTkSuQmCC" class="card-img-top" alt="ec2" height="100px" width="10px">
+        <div class="card-body">
+          <h5 class="card-title">Amazon EC2</h5>
+          <p class="card-text">Amazon Elastic Compute Cloud is a part of Amazon's cloud-computing platform, Amazon Web Services, that allows users to rent virtual computers on which to run their own computer applications.An EC2 instance is a VM.</p>
+          <a href="https://aws.amazon.com/ec2/" class="btn btn-primary">Go documentation</a>
+        </div>
+      </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

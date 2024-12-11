@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Html practice">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Vinthiya">
+    <title>Practice</title>
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSObhWW7gEGNs1r3kbEXIeWuIDC74C6p5RVQ&s">
+    <style>
+        table, th, tr{
+            border: 1px solid black;
+            border-collapse:collapse
+          
+        }
+        /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #4232cf;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(19, 13, 29);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #cf3996;
+  color: white;
+}
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+  h1{
+    color:#cf3996
+  }
+    </style>
+</head>
+<body>
+    <hr>
+    <u><h1 id="heading">Task2</h1></u>
+    <h1 align="center">HTML</h1>
+    <ul>
+    <li><h2 >HTML stands for Hyper Text Markup Language</h2></li>
+    <li><h3> HTML is the standard markup language for creating Web pages</h3></li>
+    <li><h4>HTML describes the structure of a Web page</h4></li>
+    <li><h5>HTML consists of a series of elements</h5></li>
+    <li><h6>HTML elements tell the browser how to display the content</h6></li>
+    <li><p>The HTML p element defines a paragraph.
+
+        A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+    </li>
+    </ul>
+    </hr>
+    <hr>
+    <u><h1>Task3</h1></u>
+    <u><h2>Unordered List</h2></u>
+    <h3>Fruits</h3>
+    <ul>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+    <u><h2>Ordered List</h2></u>
+    <h3>Flowers</h3>
+    <ol>
+        <li>Jasmine</li>
+        <li>Lotus</li>
+        <li>Rose</li>
+        <li>Lily</li>
+    </ol>
+</hr>
+<hr>
+<u><h1>Task 4</h1></u>
+<h2 align="center">Cloud Computing</h2>
+<p style="font-size : 24px">Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).</p>
+<a href="https://aws.amazon.com/what-is-cloud-computing/" target="blank">Learn more about cloud computing and its services</a>
+</hr>
+<hr>
+<u><h1>Task 5</h1></u>
+<u><h2 align="center">AWS Services</h2></u>
+<img src="data:image/png;base64,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" height="250" width="250">
+<h4>AWS Lambda</h4>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA51BMVEX////1hTSdUSXzdQ75hzWXTSTzcQDybACbTBz1gy/pfjK5YiryaQC2gmevXCj1gCj0ehP2mVv+9e/83Mj97eaWQQCZSBP9wJP2nWtoOhj70rj95tj6xqjt4Nn3pHH6y7D4tJH3qXnDmYT2kUz83tD0iEP4sof5vZry7uuBRR7XvK/fy8PXlWrqq4ChWzTRcC5gJwB2QByvZju4ckfKppZhLwD6s4DKuK5eNBfb08+6inSqaUenkINVIQDYgkixUwuSNADjdBrrs5S0oZeIZ1J+WUKTdmRzRiZ1NwDbs5+gdV3QoITOknIivNXrAAALJElEQVR4nO2deXviOBLGMQE5gDs+OIbBhKMJR8I0faTTmT62e/qaY3e//+dZlS5L2ARIbLDZep/+ow1Y1k9VKpXkWC6VUCgUCoVCoVAoFAp1AN30W8euQqa6WX1xvcmoeex6ZKWbVbvcqFg113MHwxM05U25XS4DIYhSWrOrY1cpVXE+Rcgh3e7pmPKc8+mEgnI6O41e+Uc5kVD466AXHLuCT1Z7I6GgnIwK3isfJuSQXhEDbCi9byshp3Sno6siOezN6mvFnzehyjsRyl5ZFFPS8b1aB7t4k1mvsyOh6pX5D7Bs/KOEwvuqexAWolcu+fguCC2rsiehdNhZM6+98tl5+cmEINer+fmcjKRFyE05yWHakyIhg3Tdbj88NpShdAmFKd089cr0CUHUlH5eTJkNoSUnI9yUi+W34+FmRsghXf/bzYdVu/31eHOvzAgrlYpVb1ycdzrnrHiWGhxj7pUJIaWrv2xcVKuyMJUyeZP5of11M+HF4wjBdC8b5YjOKB7GkwPnP2kSVhLpTEJuydpgeDDItAiBjjpmOQYXJxSU+SQEjsRPebdLgksmpIy5JKxfNF7WY5jJjllQwiqQSMyK+vAhuKIR8h/rmJX6dsCthIvlP5nlA48hlJhVivnSehrh5fLth4/tdvsL3CHJJL7uR0gTlHOz6ju4aDKhtbh5+6xM2XiR/D5QFvnAPoQ1f/n22cdOmyVieymJENiiX/AMKot8YD9COGNxSRt/db4XZxKhafwoR3Q968iEXIyz3DENkQohVS4IuQIaKJ7tgFhcQtBlu7xVSIiESIiESIiESIiESIiESIiESIiEvHi28GiUeCKEsOZ4fX39+hoWWOUKKyWl/wpMKKle/2rqdxBjbbys14tE+EcHllEZ1usYlq7XTBT+Or7M2tB9OGeEi/v7+++f/vzx8+dfv97dvXr16k5nuqYWa1SrD60cs2+r4MPsNlalljdCHXaxuHy/vP93NUJqxO5sVJUXU91x0Xb5F9Xd3393LhqfP+eXUOh5J+KB/lW/uChXr6n//v5KCnDu/vr548efnz59+v79/v79+8vLxSJVtAMSygha/woWXjKYLFiSdRBCqYPd2daFhEiYJCQ8rJAQCZOEhIcVEiJhkpDwsEJCJEwSEh5WSIiESfo/JKxUakxeKWDKFmlNB1lN/Py5O3j37pdI8P95v9/rNanCsNXKEDt1QlrX/7x5syqXz5ka1HR1uT68enN7+xvoBdXsl0TN5qN53giDVisMm73esG/WlVJQGJ9qRYEFcSSOLJlnA9+f0kvAc7bpPqiQxr2nC1HPTWZRwED82+3t7ZvVSlvoV7ZWF8odYTmykHTEFy82kr57947aa1Kku2uxO6TKD9/c8k43A64x46JeyMJqoe+QJsBW63y40Es7EUKhaj3+eMqpEcYAkRAJkRAJkRAJkRAJkRAJkRAJdS1uOuWtKijh4vLmOTydvx2weISLJbDtsfVAgQgp24ePq723VdiHsOa6RyO06mW5jYWq+uP3xTAbSe0e7qa9weSehCYcbG5Sf+TeJtZS3/hD7PzhjdPf7+yR+9NUy/BIwdP3p5Gbt3QamW0yvS+h3HzH0vYYegIhF+3d/81s89PH7ROlf3VSuygl7/Vl7K5XdMJEia3aHnxopNiEgrLywK5mMcLc7ki3DXPT3m0m4WE3509770ux/97a7oIaYQZj+mEJBSVsXarZUhSf0Zh+eEJBCcY878gdWo/24ogsd9l1Xc//tmQzrPqhfTN7QtiJXjrkYvn24L6ZMaHruoffTXeTUifM24bl6RLCKzL83BhPKD1CfYvyPOlZOxXC/L78obR4zhbLnkKY7xd4lAQjJ4ScYz9COKMALywDRjoke1aXRold3xVkFeZFOkyL59PxkMfAHQkL9TIkU7sQ1mBEL9QLrXRtI8z/64+26UHCWg5H9L218e2AsOH/ERPo9PSh00kghJ5XrFfJPSCRA0SEJ/i+Vc4od9j2aNg8do3SFzA2KifT8xK1eP7lBMLmw2qdVM9DoVAoFAqFQqFQKBQKhUKhUKgdNOhS+WppG466Y3k01L8LffiuJ476vuc4ju11h/EyA/ZLXT311dwn9DxSG/TMU/jntjtI+8Z5yyFUjqpm16aHtoSy9O/m8FOHV6Bv2+SMidikn1yoJmeuyhDn0YsQjXEWfe546TKOWMFEPbXVt+mhLW7GBPAlGYivBuyIwfv2mSZ7/am2lnNmyhaEXf084szE74Oa+XmqGylZoumUKzJCYZUeHBD5IJIHBxPGanPrOaLl7bFZKCeM21CdJzxAovBKaJ8neP5jFYrWtlWZnma2Ga8/v4URMFxo9qbDLddshT1uTce8A8cISXcUiTlen583vmqF/akdFT3n/5/Rz4c1YjT40zWXvUk5mk8is3mcnluUWxeq2iWanVn1lCdrhLYZSqh4e4leNmPnMeMzKtkzWF+w0/NT4aRaq/EaB6qiip594QSipmQqi5hAk5hPFyQTsgKiutdkU/LerhzdMxr8qQp5x9Dd9IrVjt06HIr+T9gXY2Vcx7AaDY+27RhulUzIWjNqirkMXPzXKiD7UF5qz2PAVcgUvE61WhC54EAYmDsQVJC3NDFaOeyDjGKTCR3DVKUeaxnaEVuqgzM1objUQg3zlFmTuY+0wkSReMK+ZC4ryC09MYyeoERC3o+js4I5JZnTqwasu5NM7jizizphybj2TPYriLMExktiiSPDe+3BxtvEiYRXKlKti/uKM8rgbwZGAsbX3ZRbtMQHfzsEF3ZKAov3SDV++Rv+kGF9tOhF5SYRBoRHWZJ6xsbdcCwSGRksAmks4D5jZFAvFmi64ieuyBNs4sfGhFJsxOe5y2bC0hWR5Z2lC6lGuMDR3RSqD6GGxxOIAxAGpkQP9QNHpaVuLC1dz9rINsJSa6rSXGea1GaPFEtZmONZupsya81YxwNQj7COSFQ3ZAp9RzW8ux4k1mxobyWkkbWm2syZpNYhPSLHtbkeTcEvKROMJJBVQTs4AU/vDIyZJyDlhMMkJBM1d+pvJ6SuOiBqfpHSn7rw6Mgu2dLzbe68MCawIAo1s3uQhPO0W6/UzOVJgW1WKTGWbiOEn1BIhpjSrgPcSedDECtXAjCHbMrxOWDjIxtDRvFChsyMMgQJPZaQXozP5lLKS0Uab4O4dwg3ZYMHjBK8kmDMKQs0yaH+TM8XmB4Y8aMPA9hFOF5ik6RmxNAMeJqb8uRb1RsOSTT7LfUGYypVTj9um0RCFrCj5CzK2uZQXGQ0baL9RPHJnwp4mpuGMuOeGE0hpxMztpqhygl3JOSBLTKOmsRMbBpu1VRFpBZpxBrmpO5UyNVaLpBxe679Mmr/oYnU25VwZCamEwnM44FCWjt8vIzlCjFvl4dTjuSIcU7MMWSV+VjgRqtV8FOjRsmELR4nRaE9NXPm/1NzG96aTwfkTaVFed1NRwKppFVGo2ANQDz2LFdzas6HI0IyakZiWHxaT2A+0RrZURvyLmJBkhsMPXM+/ASxnFTbz4cZSuSmTd7acpIbrA1SLbH+5DhyKWptyBc5ja3kjKOm4efx//Er9MTPVXkkjUDD5jL6ANfTvFaMAEaX0ddiZKYsFFv+i60mii4cTM1VSDkA9x2zvG2j5k5iTuroCaWj9QbLdOG52Wcpgm+TqD5erMdtIKQ5r35e5IqhpX9upTIZZiOEsRris4lOICtCSLQ7R8jGB+O64fhMeOA0aW6xtuZtz6LzhPOezYzyml3xefJ87DhqXVGF+/eYEM5LGA3Y56f91/MoFAqFQqFQKBQKhUKhYvof4o9rIOD6BXgAAAAASUVORK5CYII=" height="250" width="250">
+<h4>AWS ECS</h4>
+</hr>
+<hr>
+<u><h1>Task 6</h1></u>
+<table>
+    <thead>
+        <th>Networking Service</th>
+        <th>AWS</th>
+        <th>Azure</th>
+        <th>GCP</th>
+    </thead>
+    <tbody>
+       <tr>
+            <th>Virtual Private cloud</th>
+            <td>Amazon VPC</td>
+            <th>Azure Virtual Cloud</th>  
+            <td>Virtual Private cloud</td>
+        </tr>
+        <tr>
+            <th>Load Balancing</th>
+            <td>Elastic Load Balancer</td>
+            <th>Load Balancer</th>
+            <td>Cloud Load Balancing</td>
+        </tr>
+    </tbody>   
+</table>
+</hr>
+<hr>
+<u><h1>Task 7 </h1></u>
+<h1 align="center">APPLICATION FORM</h1>
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" value="" placeholder="First name"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" value="" placeholder="Last name"><br><br>
+    <label for="dob">Date  of Birth:</label>
+    <input type="date" id="dob" value="dob"><br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="gender">
+    <label for="gender">Male</label>
+    <input type="radio" id="gender">
+    <label for="gender">Female</label><br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email" value="" placeholder="Enter email address"><br><br>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<u><h1>Task 8 </h1></u>
+<div class="topnav">
+    <a class="active" href="https://aws.amazon.com/what-is-cloud-computing/" target="blank">Cloud Computing</a>
+    <a href=https://aws.amazon.com/>AWS</a>
+    <a href="https://portal.azure.com/#home">Azure</a>
+    <a href="https://cloud.google.com/">GCP</a>
+  </div>
+</hr>
+<hr>
+<u><h1>Task 10</h1></u>
+<h3>Cloud Computing</h3>
+<blockquote>Cloud computing is the on-demand availability of computer system resources, especially data storage and computing power, without direct active management by the user. Large clouds often have functions distributed over multiple locations, each of which is a data center.Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, you can access technology services, such as computing power, storage, and databases, on an as-needed basis from a cloud provider like Amazon Web Services (AWS).</blockquote>
+</hr>
+<hr>
+<u><h1>Task 11</h1></u>
+<h2>play the video</h2>
+<video width="250" height="250" controls>
+    <source src="video.mp4.mp4" type="video/mp4">
+</video>
+</hr>
+<hr>
+<u><h1>Task 12</h1></u>
+<article> 
+    <header> 
+        <aside>
+            <h3>Overview</h3>
+            <p style="font-size:24px">
+                Azure was first introduced at the Professional Developers Conference (PDC) in October 2008 under the codename "Project Red Dog".It was officially launched as Windows Azure in February 2010 and later renamed to Microsoft Azure on March 25, 2014
+            </p>
+        </aside>
+    <h1>Microsoft Azure</h1>
+    <p>What is Azure</p>
+    </header>
+    <p style="font-size: 24px;">Microsoft Azure, or just Azure, is the cloud computing platform developed by Microsoft. It has management, access and development of applications and services to individuals, companies, and governments through its global infrastructure.Azure offers several products and services to its customers. Among them there are core Azure services which you must be aware of as a customer before working on the platform. Azure core resources or Azure services are broadly classified into four categories which are compute, networking, storage, and database.</p>
+</article>
+<section>
+    <h1>Azure Services</h1>
+
+    <ul>
+    <li style="font-size:24px">Azure Kubernetes Service (AKS)</li>
+    <li style="font-size:24px"> Azure App Service.</li>
+    <li style="font-size:24px"> Azure Container Instances​</li>
+    <li style="font-size:24px"> Azure Kubernetes Fleet Manager PREVIEW.</li>
+    <li style="font-size:24px">Azure Container Apps.</li>
+    <li style="font-size:24px">Azure Container Registry.</li>
+    <li style="font-size:24px">App Configuration.</li>
+    </ul>
+</section>
+<footer>
+    <a href="https://portal.azure.com/#allservices" target="blank">Learn more about Azure</a>
+</footer>
+</hr>
+<hr>
+<u><h1>Task 13</h1></u>
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" value="" placeholder="First name" required><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" value="" placeholder="Last name" required><br><br>
+    <label for="dob">Date  of Birth:</label>
+    <input type="date" id="dob" value="dob" required><br><br>  
+    <label for="email">Email</label>
+    <input type="email" id="email" value="" placeholder="Enter email address" required><br><br>
+    <label for="password">Password</label>
+    <input type="password" id="password" value="" required><br><br>
+    <label for="password">Confirm Password</label>
+    <input type="password" id="password" value="" required><br><br>  
+    <button type="submit">Submit</button>
+</form>
+</hr>
+<hr>
+<u><h1>Task 14</h1></u>
+<label for="cloud platforms"><h1>Cloud Platform</h1></label>
+<select name="cloud platforms" id="cloud">
+    <option value="aws">AWS</option>
+    <option value="microsoft azure">Microsoft Azure</option>
+    <option value="gcp">GCP</option>
+</select>
+</hr>
+<hr>
+<u><h1>Task 15</h1></u>
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit">
+</form>
+</hr>
+<hr>
+<u><h1>Task 16</h1></u>
+<h1>AWS</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/a9__D53WsUs?si=NKid-hfeeNy_L6jh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</hr>
+<hr>
+<u><h1>Task 17</h1></u>
+<table>
+    <tbody>
+        <tr> 
+            <th rowspan="2">Day</th>
+            <th colspan="2">Mark</th>
+            <th rowspan="2">Percentage</th>
+        </tr>
+            
+           <tr>
+            <th>Sub 1</th>
+            <th>Sub 2</th>
+           </tr>
+           <tr>
+            <th>Vinthiya</th>
+            <th>93</th>
+            <th>97</th>
+            <th>95%</th>
+           </tr>
+           <tr>
+            <th>Keerthiga</th>
+            <th>95</th>
+            <th>95</th> 
+            <th>95%</th>   
+        </tr>
+        <tr>
+            <th>Kayalvizhi</th>
+            <th>94</th>
+            <th>96</th> 
+            <th>95%</th>
+        </tr>
+    </tbody>  
+</table>
+</hr>
+<hr>
+<u><h1>Task 18</h1></u>
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" value="" placeholder="First name" required><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" value="" placeholder="Last name" required><br><br>
+    <label for="dob">Date  of Birth:</label> 
+    <input type="email" id="email" value="" placeholder="Enter email address" required><br><br>
+    <label for="number">Mobile Number:</label>
+    <input type="number" id="number" value="" placeholder="Enter your Mobile Number">
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+<hr>
+<u><h1>Task 19</h1></u>
+<h1>Aws Services</h1>
+<p>Click on management cosole its go to the the aws management console website</p>
+<img src="Services1.png" width="700" height="700" alt="" usemap="#aws_services">
+<map name="aws_services">
+    <area shape="rect" coords="34,44,270,350" alt="" href="https://aws.amazon.com/console/" >
+  <area shape="rect" coords="290,172,333,250" alt="console" href="https://aws.amazon.com/console/">
+  <area shape="circle" coords="337,300,44" alt="lambda" href="https://aws.amazon.com/lambda/">
+</map>
+</hr>
+<hr>
+<u><h1>Task 20</h1></u>
+<p>Added the meta details like description,Author,Keywords</p>
+</hr>
+<hr>
+<u><h1>Task 21</h1></u>
+<form>
+    <h1 align="center">Form</h1>
+    <p style="font-size:20px">What is your favourite fruit?</p>
+    <input type="checkbox" id="fruits" value="">
+    <label for="fruits" id="fruits">Banana</label><br>
+    <input type="checkbox" id="fruits" value="">
+    <label for="fruits" id="fruits">Orange</label><br>
+    <input type="checkbox" id="fruits" value=""> 
+    <label for="fruits" id="fruits">Apple</label>
+     <br><br>
+    <label for="position">What is your favourite sports?</label><br><br>
+    <input type="radio" id="position" value="sports">
+    <label for=" sports" id=" sports">Cricket</label><br>
+    <input type="radio" id="position" value="sports">
+    <label for=" sports" id=" sports">Football</label><br>
+    <input type="radio" id=" position" value="sports"> 
+    <label for=" sports" id=" sports">Hockey</label>
+    
+</form>
+</hr>
+<hr>
+<u><h1>Task 22</h1></u>
+<div style="overflow-x:auto;">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Mark1</th>
+            <th>Mark2</th>
+            <th>Mark3</th>
+            <th>Mark4</th>
+            <th>Mark5</th>
+            <th>Mark6</th>
+            <th>Mark7</th>
+            <th>Mark8</th>
+            <th>Mark9</th>
+            <th>Mark10</th>
+            <th>Mark 11</th>
+            <th>Mark 12</th>
+            <th>Mark 13</th>
+            <th>Mark 14</th>
+            <th>Mark 15</th>
+
+        </tr>
+        <tbody></tbody>
+        <tr>
+            <th>Vinthiya</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>95</th>
+            <th>92</th>
+            <th>90</th>
+            <th>95</th>
+            <th>99</th>
+            <th>93</th>
+        </tr>
+        <tr>
+            <th>Keerthiga</th>
+            <th>92</th>
+            <th>90</th>
+            <th>95</th>
+            <th>99</th>
+            <th>93</th> 
+            <th>98</th>
+            <th>95</th>
+            <th>85</th>
+            <th>90</th>
+            <th>91</th>
+            <th>92</th>
+            <th>90</th>
+            <th>95</th>
+            <th>99</th>
+            <th>93</th>
+        </tr>
+        <tr>
+            <th>Kayalvizhi</th>
+            <th>98</th>
+            <th>95</th>
+            <th>85</th>
+            <th>90</th>
+            <th>91</th>
+            <th>92</th>
+            <th>90</th>
+            <th>95</th>
+            <th>99</th>
+            <th>93</th> 
+            <th>92</th>
+            <th>90</th>
+            <th>95</th>
+            <th>99</th>
+            <th>93</th>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</hr>
+<hr>
+<u><h1>Task 23</h1></u>
+<h1>Play the audio</h1>
+<audio controls autoplay>
+            
+    <source src="This Story Will Change Your Life _ Buddhism In English.mp3" type="audio/ogg">
+
+</audio>
+</hr>
+<hr>
+<u><h1>Task 24</h1></u>
+<h1>Skills</h1>
+
+<label for="lang">python</label>
+<progress id="lang" value="45" max="100"> 45% </progress><br><br>
+<label for="lang">HTML</label>
+<meter id="lang" value="0.6">60%</meter>
+</hr>
+<hr>
+<u><h1>Task 25</h1></u>
+<h3>Added favicon image</h3>
+</hr>
+<hr>
+<u><h1>Task 26</h1></u>
+<ul>
+    <h3>Cloud Platforms</h3>
+    <li style="font-size:24px">AWS</li>
+    <ol>
+        <li style="font-size:20px">Azure Kubernetes Service (AKS)</li>
+        <li style="font-size:20px"> Azure App Service.</li>
+        <li style="font-size:20px"> Azure Container Instances​</li>
+        <li style="font-size:20px"> Azure Kubernetes Fleet Manager PREVIEW.</li>
+        <li style="font-size:20px">Azure Container Apps.</li>
+        <li style="font-size:20px">Azure Container Registry.</li>
+        <li style="font-size:20px">App Configuration.</li>
+    </ol>
+    <li style="font-size:24px">GCP</li>
+    <li style="font-size:24px">Azure</li>
+</ul>
+</hr>
+<hr>
+<u><h1>Task 27</h1></u>
+<details>
+    <Summary>AWS</Summary>
+    <p><strong>Amazon EC2</strong>Amazon EC2 is the fastest cloud computing service provided by AWS. It offers virtual, secure, reliable, and resizable servers for any workload. </p>
+    <p><strong>Amazon RDS </strong>Amazon RDS (Relational Database Service) is another service provided by AWS which is a managed database for PostgreSQL, MariaDB, MySQL, and Oracle.</p>
+</details>
+<hr>
+<u><h1>Task 28</h1></u>
+<p style="font-size:20px">Download th aws image</p>
+<a href="data:image/png;base64,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" download>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSObhWW7gEGNs1r3kbEXIeWuIDC74C6p5RVQ&s" alt="AWS" height="100" width="100">
+</a>
+</hr>
+<hr>
+<u><h1>Task 29</h1></u>
+<h1>Website Sitemap</h1>
+<ul>
+    <li><a href="practice.html">Home</a></li>
+    <li><a href="practice.html">About Us</a></li>
+    <li><a href="form.html">Contact Us</a></li>
+    <!-- Add more URLs as needed -->
+</ul>
+<hr>
+<u><h1>Task 30</h1></u>
+<a href="form.html">Application Form</a>
+</body>
+</html>

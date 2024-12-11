@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>table</title>
+        <style>
+            table, th, td {
+            border: 1px solid black;
+            border-collapse : collapse;
+           }
+           
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th>Type</th>
+                <th>Architecture</th>
+                <th>CPU</th>
+                <th>Memory</th>
+                <th>Storage</th>
+                <th>Price($/hr)</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>t1.micro</td>
+                    <td>32-bit or 64-bit</td>
+                    <td>1-2 ECU</td>
+                    <td>613 MB</td>
+                    <td>None (use EBS storage)</td>
+                    <td>0.02</td>
+                </tr>
+                <tr>
+                    <td>m1.small</td>
+                    <td>32-bit </td>
+                    <td>1 ECU</td>
+                    <td>1.7 GB</td>
+                    <td>Local</td>
+                    <td>0.085</td>
+                </tr>
+                <tr>
+                    <td>m1.large</td>
+                    <td>64-bit</td>
+                    <td>4 ECU</td>
+                    <td>7.5 GB</td>
+                    <td>Local</td>
+                    <td>0.34</td>
+                </tr>
+                <tr>
+                    <td>m1.xlarge</td>
+                    <td>64-bit</td>
+                    <td>8 ECU</td>
+                    <td>15 GB</td>
+                    <td>Local</td>
+                    <td>0.68</td>
+                </tr>
+                <tr>
+                    <td>c1.medium</td>
+                    <td>32-bit or 64-bit</td>
+                    <td>5 ECU</td>
+                    <td>1.7 GB</td>
+                    <td>Local</td>
+                    <td>0.17</td>
+                </tr>
+                <tr>
+                    <td>c1.xlarge</td>
+                    <td>64-bit</td>
+                    <td>20 ECU</td>
+                    <td>7 GB</td>
+                    <td>Local</td>
+                    <td>0.68</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

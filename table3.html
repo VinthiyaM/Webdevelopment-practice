@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table , th, td {
+            border: 1px double white;
+            border-collapse : collapse;  
+           width: 50%; 
+
+        }
+        th{
+            height: 30px;
+            color: aliceblue;
+            font-family:Arial, Helvetica, sans-serif ;
+            background-color:rgba(7, 62, 240, 0.432);
+}  
+        td{
+            font-family:Georgia, 'Times New Roman', Times, serif ; 
+            padding-left: 20px;
+
+        }
+        #details tr:nth-child(odd){background-color: rgb(197, 208, 214);}
+    </style>
+</head>
+<body>
+    <table id= "details">
+        <thead>
+            <th>Style</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>border-style</td>
+                <td>Type of border: none, solid, dashed, dotted, double, groove, ridge, inset, outset.</td>
+            </tr>
+            <tr>
+                <td>border-color</td>
+                <td>Color of border.</td>
+            </tr>
+            <tr>
+                <td>border-width</td>
+                <td>Width of border,measured in pixels. Also available: thin, medium, and thick.</td>
+            </tr>
+            <tr>
+                <td>border-collapse</td>
+                <td>collapse: borders display as single border
+                    separate: borders are detached (default).
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
